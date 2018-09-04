@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>CV</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+import UIKit
+import Darwin
+import AVFoundation
+
+@IBDesignable class navbar: UIView {
+    let viewname = "navbar"
+ 
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        initialaze()
+        // commonInit()
+   
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        initialaze()
+        // commonInit()
+    }
+    
+    //    private func  commonInit(){
+    //        Bundle.main.loadNibNamed(viewname, owner: self, options: nil)
+    //        addSubview(Player_uiview)
+    //        Player_uiview.frame = self.bounds
+    //        Player_uiview.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+    //    }
+    
+    private func initialaze() {
+        let view:UIView =  loadViewFromNib()
+        //        Action.setFont(view: view)
+        view.frame = bounds
+        view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        addSubview(view)
+        
+    }
+    
+    //******   for Load Custom View
+    private func loadViewFromNib () -&gt; UIView{
+        let  bundle = Bundle(for: type(of: self))
+        let nib = UINib(nibName: viewname , bundle:bundle)
+        let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
+        
+        return view
+        //      return UINib(nibName: "custom_player", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! UIView
+    }
+    
+    
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E1B2D990-6E72-4B08-91CE-9D7C2E1D24E2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Custom View </string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
