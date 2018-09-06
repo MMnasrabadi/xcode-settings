@@ -20,3 +20,13 @@ IDETextKeyBindingSet
     Place at /Applications/Xcode.app/Contents/Frameworks/IDEKit.framework/Versions/A/Resources/IDETextKeyBindingSet.plist.
 
  
+Help-full
+---
+    show hidden to mac 
+        defaults write com.apple.finder AppleShowAllFiles YES;
+        killall Finder /System/Library/CoreServices/Finder.app
+    
+
+    gitkraken show . file hidden
+        Shift + Cmd + .  TO REPO SELECTION
+    
