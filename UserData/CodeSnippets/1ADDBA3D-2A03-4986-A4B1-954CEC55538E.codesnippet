@@ -3,23 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>sbl</string>
+	<string>commect syntax</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>  override var preferredStatusBarStyle: UIStatusBarStyle {
-         return .lightContent
-    }</string>
+	<string>// MARK:  &lt;#title#&gt;
+         
+// TODO:  &lt;#task#&gt;
+         
+// FIXME: &lt;#job#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>0E7564DE-E044-4A1C-9803-F42143C07B82</string>
+	<string>1ADDBA3D-2A03-4986-A4B1-954CEC55538E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetSummary</key>
-	<string> change status bar color to view Controller</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Status Bar Light</string>
+	<string>All comment syntax </string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

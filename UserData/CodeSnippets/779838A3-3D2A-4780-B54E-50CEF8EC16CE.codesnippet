@@ -3,23 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>sbl</string>
+	<string>queue background</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>  override var preferredStatusBarStyle: UIStatusBarStyle {
-         return .lightContent
-    }</string>
+	<string>DispatchQueue.global(qos: .background).async {
+            &lt;#code#&gt;
+        }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>0E7564DE-E044-4A1C-9803-F42143C07B82</string>
+	<string>779838A3-3D2A-4780-B54E-50CEF8EC16CE</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
-	<key>IDECodeSnippetSummary</key>
-	<string> change status bar color to view Controller</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Status Bar Light</string>
+	<string>DispatchQueue background</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

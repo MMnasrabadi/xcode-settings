@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>CV</string>
+	<string>cv</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>
@@ -14,10 +14,9 @@ import UIKit
 import Darwin
 import AVFoundation
 
-@IBDesignable class navbar: UIView {
-    let viewname = "navbar"
+@IBDesignable class &lt;#name for custom view#&gt;: UIView {
+    let viewname = &lt;#name of xib file#&gt;
  
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         initialaze()
@@ -64,11 +63,13 @@ import AVFoundation
 	<string>E1B2D990-6E72-4B08-91CE-9D7C2E1D24E2</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>this is a custom view</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>Custom View </string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>
