@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>cnb</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>class CustomNavigationBar: UINavigationBar {
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+      //  self.backgroundColor = UIColor.red
+        
+    }
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)!
+    }
+    override func draw(_ rect: CGRect) {
+        
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7A4133D6-ADFE-42C3-9B02-9F3BCC62E9C4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Custom Navigation Bar </string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Custom NavigationBar</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
