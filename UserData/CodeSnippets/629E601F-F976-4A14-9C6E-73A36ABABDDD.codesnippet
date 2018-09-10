@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>tv</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>class ViewController: UIViewController , UITableViewDataSource, UITableViewDelegate{
+
+    @IBOutlet weak var tableView: UITableView!
+    
+ 
+        ///for viewDidLoad
+        tableView.backgroundColor = UIColor.clear
+      
+     
+
+    // select row
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        print("didSelectRowAt\(indexPath)")
+        
+        // let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
+        tableView.reloadData()
+        let cell = tableView.cellForRow(at: indexPath) as! TableViewCell
+        cell.uicell.image =  imageLiteral(resourceName: "Skadr")
+        
+//        switch indexPath.row  {
+//        case 0:
+//           self.performSegue(withIdentifier: "fehrest", sender: self )
+//        case 1:
+//            self.performSegue(withIdentifier: "tafal", sender: self )
+//        case 2:
+//            self.performSegue(withIdentifier: "search", sender: self )
+//        case 3:
+//            self.performSegue(withIdentifier: "lastshow", sender: self )
+//        case 4:
+//            self.performSegue(withIdentifier: "fav", sender: self )
+//        case 5:
+//            self.performSegue(withIdentifier: "about", sender: self )
+//
+//        default:
+//            print(" ** performSegue Identifier not set")
+//        }
+        
+        
+    }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if (segue.identifier == "fehrest") {
+//        }
+//    }
+//
+//    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+//       print("didDeselectRowAt\(indexPath)")
+//
+//    }
+    
+    /// Section count
+    func numberOfSections(in tableView: UITableView) -&gt; Int {
+        return 1
+    }
+    
+    /// tableView cell count
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int{
+        return  AppDelegate.mainList.count
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {
+        
+        let row =  AppDelegate.mainList[indexPath.row]
+        
+        //let cell = Bundle.main.loadNibNamed("TableViewCell", owner: self, options: nil)?.first as! TableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
+        cell.uicell.image =  imageLiteral(resourceName: "kadr")
+        cell.matn.text = row.name
+        cell.ax.image  = row.ax
+        
+        
+        cell.backgroundColor = UIColor.clear
+     
+        return cell
+    }
+    
+    /// height for cell
+   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -&gt; CGFloat {
+      return 70
+    }
+    
+    
+ 
+   
+   
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>629E601F-F976-4A14-9C6E-73A36ABABDDD</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Table View to View Controller custom cell</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Table View to View Controller </string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
