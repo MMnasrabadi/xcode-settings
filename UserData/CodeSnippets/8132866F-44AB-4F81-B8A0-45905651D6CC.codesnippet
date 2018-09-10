@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ias</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> 
+ @IBOutlet weak var imageView: UIImageView!
+ 
+ override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    
+    let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.imageTapped(gesture:)))
+    
+    // add it to the image view;
+    imageView.addGestureRecognizer(tapGesture)
+    // make sure imageView can be interacted with by user
+    imageView.isUserInteractionEnabled = true
+    
+ }
+ 
+ @objc func imageTapped(gesture: UIGestureRecognizer) {
+    // if the tapped view is a UIImageView then set it to imageview
+    if (gesture.view as? UIImageView) != nil {
+        print("Image Tapped")
+        performSegue(withIdentifier:  &lt;#Identifier#&gt; , sender: self)
+    }
+ }
+ 
+ 
+ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if (segue.identifier == &lt;#identifier#&gt;) {
+        print("fehrest select")
+    }
+ }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8132866F-44AB-4F81-B8A0-45905651D6CC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Image Action Select </string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
