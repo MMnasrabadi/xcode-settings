@@ -3,30 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ps</string>
+	<string>queue asyncAfter</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    /// use to Action 
-        performSegue(withIdentifier: "fehrest", sender: self)
-     
- 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "fehrest") {
-            print("fehrest select")
-        }
-    }</string>
+	<string>DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
+    &lt;#self.performSegue(withIdentifier: "mainSegue", sender: self)#&gt;
+})</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>25F7800E-1582-4F20-B8DD-BC2EC5188210</string>
+	<string>CE3235E9-4276-4A21-80CD-7E9E887C19A1</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Perform Segue</string>
+	<string>DispatchQueue run after several time</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
