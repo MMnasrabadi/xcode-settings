@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>Shadow For Textfield / Extension</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>extension UITextField {
+    func addborderAndimage(){
+        layer.borderColor = UIColor.green.cgColor
+        layer.borderWidth = 1
+        layer.cornerRadius = 5
+        
+        placeholder = "hint text"
+        
+        
+        let imageview = UIImageView(frame:CGRect(x: 0, y: 0, width: 30, height: 20))
+        imageview.image = #imageLiteral(resourceName: "main_1")
+        imageview.contentMode = .scaleAspectFit
+        
+        rightViewMode = .always
+        rightView = imageview
+        
+        leftViewMode = .always
+        leftView = imageview
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A447EDAB-652D-41A1-8DE9-FD6BDFC968D0</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>add border And image</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Add Border And Image Error </string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

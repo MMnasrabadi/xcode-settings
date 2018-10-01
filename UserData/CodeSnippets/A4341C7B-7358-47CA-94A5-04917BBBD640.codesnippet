@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>queue timing</string>
+	<string>DispatchQueue Timing</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeExpression</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>        let queue = DispatchQueue(label: &lt;#name for queue#&gt;)
@@ -17,6 +17,8 @@
 	<string>A4341C7B-7358-47CA-94A5-04917BBBD640</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>dispatchQueue after several time</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>DispatchQueue after several time</string>
 	<key>IDECodeSnippetUserSnippet</key>

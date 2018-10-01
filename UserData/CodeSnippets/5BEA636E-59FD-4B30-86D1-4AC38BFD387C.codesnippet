@@ -3,26 +3,32 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>DispatchQueue background</string>
+	<string>Shadow UILabel /  Extension</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>DispatchQueue.global(qos: .background).async {
-            &lt;#code#&gt;
-        }</string>
+	<string>extension UILabel {
+    func dropshadowontitle( )   {
+        layer.shadowOpacity = 1
+        layer.shadowColor = UIColor.white.cgColor
+        layer.shadowOffset = CGSize.zero
+        layer.shadowRadius = 5
+
+    }
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>779838A3-3D2A-4780-B54E-50CEF8EC16CE</string>
+	<string>5BEA636E-59FD-4B30-86D1-4AC38BFD387C</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>dispatchQueue background running</string>
+	<string>shadow for UILabel cbeckgerand</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>DispatchQueue run to Background</string>
+	<string>shadow for UILabel</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

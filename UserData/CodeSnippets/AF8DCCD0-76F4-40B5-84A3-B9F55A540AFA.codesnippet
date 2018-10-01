@@ -3,26 +3,34 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>DispatchQueue background</string>
+	<string>shadow Floating Action / Extension</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>DispatchQueue.global(qos: .background).async {
-            &lt;#code#&gt;
-        }</string>
+	<string>extension UIButton {
+    func creatFloatingActionButton() {
+        backgroundColor = UIColor.red
+        layer.cornerRadius = frame.height / 2
+        layer.shadowOpacity = 0.25
+        layer.shadowRadius = 5
+        layer.shadowOffset = CGSize(width: 0, height: 10)
+ 
+    }
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>779838A3-3D2A-4780-B54E-50CEF8EC16CE</string>
+	<string>AF8DCCD0-76F4-40B5-84A3-B9F55A540AFA</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>dispatchQueue background running</string>
+	<string>Create Floating Action button</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>DispatchQueue run to Background</string>
+	<string>Create Floating Action button</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

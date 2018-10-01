@@ -3,26 +3,31 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>DispatchQueue background</string>
+	<string>shadow For Card View / Extension</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>DispatchQueue.global(qos: .background).async {
-            &lt;#code#&gt;
-        }</string>
+	<string>extension UIView {
+    func addShadowAndRoundedCorners(){
+        layer.shadowOpacity = 1
+        layer.shadowOffset = CGSize.zero
+        layer.shadowColor = UIColor.orange.cgColor
+        layer.shadowRadius = 10
+    }
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>779838A3-3D2A-4780-B54E-50CEF8EC16CE</string>
+	<string>0D4EC595-C813-418B-A203-DF2F320AADAA</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>dispatchQueue background running</string>
+	<string>add shadow for card view</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>DispatchQueue run to Background</string>
+	<string>Add Shadow For Card View </string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

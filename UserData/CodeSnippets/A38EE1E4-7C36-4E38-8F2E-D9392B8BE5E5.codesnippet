@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>queue default</string>
+	<string>DispatchQueue default</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeExpression</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>DispatchQueue.global(qos: .default).async {
@@ -22,8 +22,10 @@
 	<string>A38EE1E4-7C36-4E38-8F2E-D9392B8BE5E5</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>dispatch Queue default</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>DispatchQueue default</string>
+	<string>DispatchQueue Default</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
