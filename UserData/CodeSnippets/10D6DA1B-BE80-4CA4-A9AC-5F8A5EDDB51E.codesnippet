@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ac</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeExpression</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        let alertController = UIAlertController(title: "", message: "", preferredStyle: .alert)
+        
+        let help = UIAlertAction(title: "راهنما",   style: .default,  handler: { action in
+            print("Yay! You brought your towel!")
+        })
+        let about = UIAlertAction(title: "درباره",   style: .default,  handler:{ action in
+            print("Yay! You brought your towel!")
+        })
+        let search = UIAlertAction(title: "جستجو",   style: .default,  handler: { action in
+            print("Yay! You brought your towel!")
+        })
+        
+        
+        alertController.addAction(help)
+        alertController.addAction(about)
+        alertController.addAction(search)
+        
+        self.present(alertController, animated: true, completion: nil)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>10D6DA1B-BE80-4CA4-A9AC-5F8A5EDDB51E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>alert Controller </string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Alert Controller</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

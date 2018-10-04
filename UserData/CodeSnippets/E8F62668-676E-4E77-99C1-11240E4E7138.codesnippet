@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>UIImage Picker Controller / Extension</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+    fileprivate func presentPhotoPickerContrroller(){
+        let myPickerController = UIImagePickerController()
+        myPickerController.delegate = self
+        myPickerController.sourceType = .photoLibrary
+        self.present(myPickerController, animated: true)
+        
+    }
+    
+    func addPhoto(  ) {
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
+            PHPhotoLibrary.requestAuthorization { (status) in
+                switch status {
+                    
+                case .authorized:
+                    self.presentPhotoPickerContrroller()
+                    
+                case .notDetermined:
+                    if (status == PHAuthorizationStatus.authorized){
+                        self.presentPhotoPickerContrroller()
+                    }
+                    
+                case .restricted:
+                    let alert = UIAlertController(title: "&lt;#Photo library Restricted#&gt;" , message: "&lt;#Photo library access is restricted and cannot be accessed#&gt;", preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "&lt;#Ok#&gt;", style: .default )
+                    alert.addAction(okAction)
+                    self.present(alert, animated: true )
+                    
+                case .denied:
+                        let alert = UIAlertController(title: "&lt;#Photo library Acces Denied#&gt;" , message: "&lt;#Photo library access was previously denide. Please update your Settings if you wish to change this.#&gt;", preferredStyle: .alert)
+                        let gotoSettingsAction = UIAlertAction(title: "&lt;#go to Settings#&gt;", style: .default ){ (action) in
+                            DispatchQueue.main.async {
+                                let url = URL(string: UIApplication.openSettingsURLString)!
+                                UIApplication.shared.open(url, options:  [:] )
+                            }
+                        }
+                        let cancelAction  = UIAlertAction(title: "&lt;#Cancel#&gt;", style: .cancel)
+                        
+                        alert.addAction(gotoSettingsAction)
+                        alert.addAction(cancelAction)
+                        
+                        self.present(alert, animated: true )
+                }
+            }
+        }
+    }
+    //this for end view controller
+}
+
+
+extension &lt;#ViewController#&gt; : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    private func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+//        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+//            self.image = image
+//        }
+        if let selectedImage = UIImage.from(info: info) {
+            // I am happy :)
+            &lt;#self.image = selectedImage#&gt;
+        } else {
+            // I am sad :(
+        }
+        dismiss(animated: true)
+    }
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true)
+    }
+}
+
+extension UIImage {
+    static func from(info: [UIImagePickerController.InfoKey : Any]) -&gt; UIImage? {
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            return image
+        }
+        
+        var imageToBeReturned: UIImage?
+        if let url = info[UIImagePickerController.InfoKey.referenceURL] as? URL,
+            let asset = PHAsset.fetchAssets(withALAssetURLs: [url], options: nil).firstObject {
+            let manager = PHImageManager.default()
+            let option = PHImageRequestOptions()
+            option.isSynchronous = true
+            manager.requestImage(for: asset, targetSize: CGSize(width: 1000, height: 1000), contentMode: .aspectFit, options: option, resultHandler: {(image: UIImage?, info: [AnyHashable : Any]?) in
+                imageToBeReturned = image
+            })
+        }
+        return imageToBeReturned
+    }
+}
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E8F62668-676E-4E77-99C1-11240E4E7138</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>UIImagePickerController </string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIImage Picker Controller</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
