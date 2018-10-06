@@ -3,31 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>shadow For Card View / Extension</string>
+	<string>Build app code</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>extension UIView {
-    func addShadowAndRoundedCorners(){
-        layer.shadowOpacity = 1
-        layer.shadowOffset = CGSize.zero
-        layer.shadowColor = UIColor.orange.cgColor
-        layer.shadowRadius = 10
-    }
-}</string>
+	<string>  var build: String {
+        let dictionary = Bundle.main.infoDictionary!
+        return dictionary["CFBundleVersion"] as! String
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>0D4EC595-C813-418B-A203-DF2F320AADAA</string>
+	<string>A771C6C7-6355-48DB-914F-C69BFBFA5708</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>add shadow for card view</string>
+	<string>Build app</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Add Shadow For Card View </string>
+	<string>Build app</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
