@@ -60,7 +60,7 @@
 
 
 extension &lt;#ViewController#&gt; : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    private func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+      func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
 //        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
 //            self.image = image
 //        }
