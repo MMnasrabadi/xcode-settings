@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>onesignal notification</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>import OneSignal
+
+import Firebase
+import FirebaseMessaging
+import UserNotifications
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDelegate{
+    
+    static var launchOptions: [UIApplication.LaunchOptionsKey : Any]?
+
+
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -&gt; Bool {
+    // Override point for customization after application launch.
+    
+    AppDelegate.launchOptions = launchOptions
+    
+    
+    return true
+}
+
+
+public static func oneSignal() {
+        let onesignalInitSettings = [kOSSettingsKeyAutoPrompt: false]
+        
+        // Replace 'YOUR_APP_ID' with your OneSignal App ID.
+        OneSignal.initWithLaunchOptions(AppDelegate.launchOptions,
+                                        appId: &lt;#AppId#&gt;,
+                                        handleNotificationAction: nil,
+                                        settings: onesignalInitSettings)
+        
+        OneSignal.inFocusDisplayType = OSNotificationDisplayType.notification;
+        
+        // Recommend moving the below line to prompt for push after informing the user about
+        //   how your app will use them.
+        OneSignal.promptForPushNotifications(userResponse: { accepted in
+            print("User accepted notifications: \(accepted)")
+        })
+      }
+      
+      func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        var token = ""
+        for i in 0..&lt;deviceToken.count {
+            token = token + String(format: "%02.2hhx", arguments: [deviceToken[i]])
+        }
+        print("== Registration succeeded! regid: ", token)
+        AppDelegate.saveSetting.set(token, forKey: "regid")
+        
+        if let OneSignalid = OneSignal.getPermissionSubscriptionState().subscriptionStatus.userId {
+            print("== Registration succeeded! pushe-id: ", OneSignalid)
+            AppDelegate.saveSetting.set(OneSignalid, forKey: "OneSignalid")
+            registerApp()
+        }
+    }
+
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2A6BCA42-9DFA-4A83-B30D-F4A1FD93D8FE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>onesignal</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
