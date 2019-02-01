@@ -3,29 +3,31 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>Perform Segue</string>
+	<string>hideKeyboardWhenTappedAround</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    /// use to Action 
-        performSegue(withIdentifier: "fehrest", sender: self)
-     
- 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "fehrest") {
-            print("fehrest select")
-        }
-    }</string>
+	<string>extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>25F7800E-1582-4F20-B8DD-BC2EC5188210</string>
+	<string>BCABF45C-3A18-459D-B38F-4DD9ADBEDB81</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Perform Segue</string>
+	<string>Hide Keyboard WhenT apped Around</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Perform Segue</string>
+	<string>Hide Keyboard</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,29 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>Perform Segue</string>
+	<string>goToStoryboard</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    /// use to Action 
-        performSegue(withIdentifier: "fehrest", sender: self)
-     
- 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "fehrest") {
-            print("fehrest select")
-        }
+	<string>  static func goToStoryboard(name: String, presenter:UIViewController ){
+        let sb = UIStoryboard(name: name, bundle: nil)
+        let popup = sb.instantiateInitialViewController()!
+        presenter.present(popup, animated: true )
     }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>25F7800E-1582-4F20-B8DD-BC2EC5188210</string>
+	<string>7A30E1CB-D1D1-4BA8-9E34-B83978E85FE2</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Perform Segue</string>
+	<string>goToStoryboard</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Perform Segue</string>
+	<string>go To Storyboard</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

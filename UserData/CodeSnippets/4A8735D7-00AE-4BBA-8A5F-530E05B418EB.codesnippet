@@ -3,29 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>Perform Segue</string>
+	<string>UIFont.familyNames</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    /// use to Action 
-        performSegue(withIdentifier: "fehrest", sender: self)
-     
- 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "fehrest") {
-            print("fehrest select")
+	<string>        for family: String in UIFont.familyNames {
+            print("\(family)")
+            for names: String in UIFont.fontNames(forFamilyName: family)
+            {
+                print("== \(names)")
+            }
         }
-    }</string>
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>25F7800E-1582-4F20-B8DD-BC2EC5188210</string>
+	<string>4A8735D7-00AE-4BBA-8A5F-530E05B418EB</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Perform Segue</string>
+	<string>UIFont familyNames</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Perform Segue</string>
+	<string>Font family Names</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
