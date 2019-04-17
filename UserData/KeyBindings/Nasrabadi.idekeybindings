@@ -314,26 +314,6 @@
 			</dict>
 			<dict>
 				<key>Action</key>
-				<string>clearConsole:</string>
-				<key>Alternate</key>
-				<string>NO</string>
-				<key>CommandID</key>
-				<string>Xcode.IDEKit.CmdDefinition.ClearConsole</string>
-				<key>Group</key>
-				<string>Debug Menu</string>
-				<key>GroupID</key>
-				<string>Xcode.IDEKit.MenuDefinition.Main</string>
-				<key>GroupedAlternate</key>
-				<string>NO</string>
-				<key>Navigation</key>
-				<string>NO</string>
-				<key>Parent Title</key>
-				<string>Debug Workflow</string>
-				<key>Title</key>
-				<string>Clear Console</string>
-			</dict>
-			<dict>
-				<key>Action</key>
 				<string>closeDocument:</string>
 				<key>Alternate</key>
 				<string>NO</string>
@@ -497,46 +477,6 @@
 				<string>NO</string>
 				<key>Title</key>
 				<string>Run…</string>
-			</dict>
-			<dict>
-				<key>Action</key>
-				<string>filterInLibrary:</string>
-				<key>Alternate</key>
-				<string>NO</string>
-				<key>CommandID</key>
-				<string>Xcode.IDEKit.CmdDefinition.FilterInLibrary</string>
-				<key>Group</key>
-				<string>Edit Menu</string>
-				<key>GroupID</key>
-				<string>Xcode.IDEKit.MenuDefinition.Main</string>
-				<key>GroupedAlternate</key>
-				<string>NO</string>
-				<key>Navigation</key>
-				<string>NO</string>
-				<key>Parent Title</key>
-				<string>Filter</string>
-				<key>Title</key>
-				<string>Filter in Library</string>
-			</dict>
-			<dict>
-				<key>Action</key>
-				<string>filterInNavigator:</string>
-				<key>Alternate</key>
-				<string>NO</string>
-				<key>CommandID</key>
-				<string>Xcode.IDEKit.CmdDefinition.FilterInNavigator</string>
-				<key>Group</key>
-				<string>Edit Menu</string>
-				<key>GroupID</key>
-				<string>Xcode.IDEKit.MenuDefinition.Main</string>
-				<key>GroupedAlternate</key>
-				<string>NO</string>
-				<key>Navigation</key>
-				<string>NO</string>
-				<key>Parent Title</key>
-				<string>Filter</string>
-				<key>Title</key>
-				<string>Filter in Navigator</string>
 			</dict>
 			<dict>
 				<key>Action</key>
