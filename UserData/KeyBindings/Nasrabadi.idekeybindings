@@ -702,7 +702,7 @@
 				<key>Navigation</key>
 				<string>NO</string>
 				<key>Title</key>
-				<string>Jump To…</string>
+				<string>Jump to…</string>
 			</dict>
 			<dict>
 				<key>Action</key>
@@ -724,7 +724,7 @@
 				<key>Navigation</key>
 				<string>NO</string>
 				<key>Title</key>
-				<string>Jump To…</string>
+				<string>Jump to…</string>
 			</dict>
 			<dict>
 				<key>Action</key>
@@ -746,7 +746,7 @@
 				<key>Navigation</key>
 				<string>NO</string>
 				<key>Title</key>
-				<string>Jump To…</string>
+				<string>Jump to…</string>
 			</dict>
 			<dict>
 				<key>Action</key>
@@ -782,7 +782,7 @@
 				<key>Navigation</key>
 				<string>NO</string>
 				<key>Title</key>
-				<string>Move Focus To Editor…</string>
+				<string>Move Focus to Editor…</string>
 			</dict>
 			<dict>
 				<key>Action</key>
@@ -2075,6 +2075,7 @@
 				<string>moveSubWordForward:</string>
 				<string>moveToBeginningOfParagraphAndModifySelection:</string>
 				<string>moveSubWordForwardAndModifySelection:</string>
+				<string>moveToEndOfTextAndModifySelection:</string>
 				<string>moveToBeginningOfDocumentAndModifySelection:</string>
 				<string>moveDownAndModifySelection:</string>
 				<string>moveBackwardAndModifySelection:</string>
@@ -2082,12 +2083,15 @@
 				<string>moveToEndOfDocumentAndModifySelection:</string>
 				<string>moveSubWordBackward:</string>
 				<string>moveParagraphBackwardAndModifySelection:</string>
+				<string>moveToBeginningOfTextAndModifySelection:</string>
 				<string>moveWordRightAndModifySelection:</string>
 				<string>moveBackward:</string>
 				<string>moveForward:</string>
+				<string>moveToEndOfText:</string>
 				<string>pageUp:</string>
 				<string>moveForwardAndModifySelection:</string>
 				<string>pageDown:</string>
+				<string>moveToBeginningOfText:</string>
 				<string>moveWordLeftAndModifySelection:</string>
 				<string>moveSubWordBackwardAndModifySelection:</string>
 				<string>moveParagraphForwardAndModifySelection:</string>
@@ -2096,9 +2100,6 @@
 				<string>selectToMark:</string>
 				<string>deleteToMark:</string>
 				<string>setMark:</string>
-				<string>swapWithMark:</string>
-				<string>yank:</string>
-				<string>deleteToEndOfParagraph:</string>
 				<array>
 					<string>moveBackward:</string>
 					<string>moveToBeginningOfParagraph:</string>
@@ -2107,15 +2108,16 @@
 					<string>moveForward:</string>
 					<string>moveToEndOfParagraph:</string>
 				</array>
-				<string>deleteWordForward:</string>
+				<string>swapWithMark:</string>
+				<string>yank:</string>
 				<string>deleteSubWordForward:</string>
+				<string>deleteToEndOfParagraph:</string>
+				<string>deleteWordForward:</string>
 				<string>delete:</string>
-				<string>deleteToBeginningOfLine:</string>
 				<string>deleteWordBackward:</string>
 				<string>centerSelectionInVisibleArea:</string>
 				<string>scrollToBeginningOfDocument:</string>
 				<string>scrollToEndOfDocument:</string>
-				<string>transpose:</string>
 				<array>
 					<string>insertNewlineIgnoringFieldEditor:</string>
 					<string>moveBackward:</string>
@@ -2123,17 +2125,18 @@
 				<string>insertDoubleQuoteIgnoringSubstitution:</string>
 				<string>previousCompletion:</string>
 				<string>nextCompletion:</string>
+				<string>transpose:</string>
 			</array>
 			<key></key>
 			<string>insertNewline:</string>
 			<key>$@D</key>
 			<array>
-				<string>selectLine:</string>
-				<string>copy:</string>
-				<string>moveToEndOfLine:</string>
+				<string>moveToBeginningOfLine:</string>
+				<string>deleteToEndOfLine:</string>
+				<string>yank:</string>
 				<string>insertNewline:</string>
-				<string>paste:</string>
-				<string>deleteBackward:</string>
+				<string>moveToBeginningOfLine:</string>
+				<string>yank:</string>
 			</array>
 			<key>$@</key>
 			<string>moveWordBackwardAndModifySelection:</string>
@@ -2150,10 +2153,7 @@
 			<key>@\ </key>
 			<string>complete:</string>
 			<key>@d</key>
-			<array>
-				<string>selectLine:</string>
-				<string>delete:</string>
-			</array>
+			<string>deleteLine:</string>
 			<key>@</key>
 			<string>scrollPageUp:</string>
 			<key>@</key>
