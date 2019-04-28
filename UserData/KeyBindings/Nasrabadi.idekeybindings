@@ -2138,6 +2138,8 @@
 				<string>moveToBeginningOfLine:</string>
 				<string>yank:</string>
 			</array>
+			<key>$@X</key>
+			<string>uppercaseWord:</string>
 			<key>$@</key>
 			<string>moveWordBackwardAndModifySelection:</string>
 			<key>$@</key>
