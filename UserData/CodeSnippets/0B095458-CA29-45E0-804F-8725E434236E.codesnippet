@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>set url and mock url with base link</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>  var &lt;#Name#&gt;IsMock = false
+    var &lt;#Name#&gt;Link:String {
+        guard &lt;#Name#&gt;IsMock else {
+            return  BastLink + "/v2" + "/&lt;#path#&gt;"
+        }
+        return  BastMockLink + "/&lt;#path#&gt;"
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0B095458-CA29-45E0-804F-8725E434236E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>set url and mock url with base link</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Mock url</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

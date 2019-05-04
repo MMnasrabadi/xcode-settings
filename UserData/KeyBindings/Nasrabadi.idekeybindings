@@ -2140,6 +2140,8 @@
 			</array>
 			<key>$@X</key>
 			<string>uppercaseWord:</string>
+			<key>$@Z</key>
+			<string>lowercaseWord:</string>
 			<key>$@</key>
 			<string>moveWordBackwardAndModifySelection:</string>
 			<key>$@</key>
@@ -2156,6 +2158,8 @@
 			<string>complete:</string>
 			<key>@d</key>
 			<string>deleteLine:</string>
+			<key>@}</key>
+			<string>capitalizeWord:</string>
 			<key>@</key>
 			<string>scrollPageUp:</string>
 			<key>@</key>
