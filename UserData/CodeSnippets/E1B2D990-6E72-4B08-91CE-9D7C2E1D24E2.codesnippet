@@ -9,19 +9,16 @@
 		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>
-import UIKit
-import Darwin
-import AVFoundation
+	<string>import UIKit
 
-@IBDesignable class &lt;#name for custom view#&gt;: UIView {
-    let viewname = &lt;#name of xib file#&gt;
- 
+@IBDesignable class &lt;#name for custom view#&gt;: UIView ,ViewConnectable{
+    // let viewname = &lt;#name of xib file#&gt;
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         initialaze()
         // commonInit()
-   
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -38,27 +35,38 @@ import AVFoundation
     //    }
     
     private func initialaze() {
-        let view:UIView =  loadViewFromNib()
-        //        Action.setFont(view: view)
-        view.frame = bounds
-        view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        addSubview(view)
-        
+        //        let view:UIView =  loadViewFromNib()
+        //        view.frame = bounds
+        //        view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        //        addSubview(view)
+        commit()
     }
     
-    //******   for Load Custom View
-    private func loadViewFromNib () -&gt; UIView{
-        let  bundle = Bundle(for: type(of: self))
-        let nib = UINib(nibName: viewname , bundle:bundle)
-        let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
-        
-        return view
-        //      return UINib(nibName: "custom_player", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! UIView
-    }
+    //    //******   for Load Custom View
+    //    private func loadViewFromNib () -&gt; UIView{
+    //        let  bundle = Bundle(for: type(of: self))
+    //        let nib = UINib(nibName: viewname , bundle:bundle)
+    //        let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
+    //        return view
+    //    }
     
     
 }
-</string>
+
+
+protocol ViewConnectable {}
+
+extension ViewConnectable where Self: UIView {
+    func commit (){
+        let bundle = Bundle(for: type(of: self))
+        let nib = UINib(nibName: String(describing: Self.self), bundle: bundle)
+        let views = nib.instantiate(withOwner: self, options: nil)
+        guard let view = views.first as? UIView else {return}
+        Font.setFont(view: view, font: .IranSans)
+        view.frame = bounds
+        addSubview(view)
+    }
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>E1B2D990-6E72-4B08-91CE-9D7C2E1D24E2</string>
 	<key>IDECodeSnippetLanguage</key>
