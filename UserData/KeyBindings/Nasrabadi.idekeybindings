@@ -2158,8 +2158,6 @@
 			<string>complete:</string>
 			<key>@d</key>
 			<string>deleteLine:</string>
-			<key>@}</key>
-			<string>capitalizeWord:</string>
 			<key>@</key>
 			<string>scrollPageUp:</string>
 			<key>@</key>
@@ -2176,6 +2174,8 @@
 			<string>pageUpAndModifySelection:</string>
 			<key>@</key>
 			<string>pageDownAndModifySelection:</string>
+			<key>~$@X</key>
+			<string>capitalizeWord:</string>
 			<key></key>
 			<string>deleteBackward:</string>
 			<key></key>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>decoder</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>  do {
+                    let decoder = JSONDecoder()
+                    decoder.dateDecodingStrategy = .formatted(DateFormatter.iso8601Full)
+                    let responseObject = try decoder.decode(structType, from: response.data!)
+                    if success != nil{
+                        if printModel {
+                            print(responseObject)
+                        }
+                        success!(responseObject)
+                    }
+                }catch let eroor as NSError{
+                    printEroor( "CodingKeys Cast Data From \(url)")
+                    printEroor( "\n\(String(describing: response.result.value))\n")
+                    printEroor( "\(eroor)")
+                    StatusCode.printPublicError(str: "CodingKeys Cast Data From \(url)" ,error)
+                    return
+                }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>06F67D91-2903-4AAB-852D-B7BB331EB7EC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>decoder</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>decoder my</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

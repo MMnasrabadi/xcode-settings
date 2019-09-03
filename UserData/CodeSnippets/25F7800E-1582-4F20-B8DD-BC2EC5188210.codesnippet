@@ -9,15 +9,18 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    /// use to Action 
-        performSegue(withIdentifier: "fehrest", sender: self)
-     
- 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "fehrest") {
-            print("fehrest select")
+	<string>  /// use to Action
+  performSegue(withIdentifier: "verify", sender: self)
+  
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if (segue.identifier == "verify") {
+        print("fehrest select")
+        if let verify = segue.destination as? VerifyController {
+            //verify.phone = phone
         }
-    }</string>
+    }
+  }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>25F7800E-1582-4F20-B8DD-BC2EC5188210</string>
 	<key>IDECodeSnippetLanguage</key>

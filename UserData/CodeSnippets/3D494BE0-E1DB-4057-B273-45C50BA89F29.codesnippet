@@ -3,21 +3,62 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>cl</string>
+	<string>MVC</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>print("❌",&lt;# message #&gt;)</string>
+	<string>
+IOS MVC :
+
+Controller
+-protocols
+-custom master controllers
+--player
+-view controller
+
+View
+-Resources
+--Assets/theme
+--Sound
+--Font
+--Gif
+-Resusableview
+-Assets.xcassets
+-Lanchscrean.storyboard
+-Main.storyboard
+-*.storyboard
+
+Model
+--AppDelegate
+
+Extensions
+-uiview
+
+CustomControls
+-popupUiView
+
+Libery
+-sql
+-caligeraphi
+
+Supporting Files
+-p.entitiements
+-info.plist
+-googleservice.plist
+-headerfile.h
+
+
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>620D08C3-C0CB-4EBD-ADD8-499E496CFC15</string>
+	<string>3D494BE0-E1DB-4057-B273-45C50BA89F29</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Custom Message of Dev's</string>
+	<string>MVC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Custom Log</string>
+	<string>MVC</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
