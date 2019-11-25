@@ -1994,6 +1994,7 @@
 				<string>centerSelectionInVisibleArea:</string>
 				<string>scrollToBeginningOfDocument:</string>
 				<string>scrollToEndOfDocument:</string>
+				<string>insertNewline:</string>
 				<array>
 					<string>insertNewlineIgnoringFieldEditor:</string>
 					<string>moveBackward:</string>
@@ -2004,16 +2005,14 @@
 				<string>nextCompletion:</string>
 				<string>transpose:</string>
 			</array>
-			<key></key>
-			<string>insertNewline:</string>
 			<key>$@D</key>
 			<array>
-				<string>moveToBeginningOfLine:</string>
-				<string>deleteToEndOfLine:</string>
-				<string>yank:</string>
+				<string>selectLine:</string>
+				<string>copy:</string>
+				<string>moveToEndOfLine:</string>
 				<string>insertNewline:</string>
-				<string>moveToBeginningOfLine:</string>
-				<string>yank:</string>
+				<string>paste:</string>
+				<string>deleteBackward:</string>
 			</array>
 			<key>$@X</key>
 			<string>uppercaseWord:</string>
