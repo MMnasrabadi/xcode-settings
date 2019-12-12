@@ -9,14 +9,13 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>        for family: String in UIFont.familyNames {
-            print("\(family)")
-            for names: String in UIFont.fontNames(forFamilyName: family)
-            {
-                print("== \(names)")
-            }
-        }
-</string>
+	<string>   print("🅵🅾🅽🆃🆂", "This is All Font to this iphone", "©")
+   for family: String in UIFont.familyNames {
+       print("==", family)
+       for names: String in UIFont.fontNames(forFamilyName: family){
+           print("==", names)
+       }
+   }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>4A8735D7-00AE-4BBA-8A5F-530E05B418EB</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -26,7 +25,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>UIFont familyNames</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Font family Names</string>
+	<string>Font Family Names</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
