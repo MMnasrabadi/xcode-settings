@@ -9,43 +9,7 @@
 		<key>com.apple.platform.iphonesimulator</key>
 		<dict/>
 		<key>com.apple.platform.macosx</key>
-		<dict>
-			<key>Appearance</key>
-			<dict>
-				<key>enabled</key>
-				<false/>
-				<key>value</key>
-				<string>2</string>
-			</dict>
-			<key>Differentiate Without Color</key>
-			<dict>
-				<key>enabled</key>
-				<false/>
-				<key>value</key>
-				<string>2</string>
-			</dict>
-			<key>Increase Contrast</key>
-			<dict>
-				<key>enabled</key>
-				<false/>
-				<key>value</key>
-				<string>2</string>
-			</dict>
-			<key>Reduce Motion</key>
-			<dict>
-				<key>enabled</key>
-				<false/>
-				<key>value</key>
-				<string>2</string>
-			</dict>
-			<key>Reduce Transparency</key>
-			<dict>
-				<key>enabled</key>
-				<false/>
-				<key>value</key>
-				<string>2</string>
-			</dict>
-		</dict>
+		<dict/>
 	</dict>
 </dict>
 </plist>
