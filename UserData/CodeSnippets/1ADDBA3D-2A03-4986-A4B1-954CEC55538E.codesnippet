@@ -9,17 +9,32 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// MARK:  &lt;#title#&gt;
-         
-// TODO:  &lt;#task#&gt;
-         
-// FIXME: &lt;#job#&gt;</string>
+	<string>// FIXME: &lt;#job#&gt;
+
+// TODO: &lt;#task#&gt;
+
+// MARK: &lt;#- tilte#&gt;
+
+// WARNNING: &lt;#WARNNING#&gt;
+
+// CHECK: &lt;#CHECK#&gt;
+
+// ERROR: &lt;#ERROR#&gt;
+
+TAGS="WARNING:|CHECK:"
+ERRORTAG="ERROR:"
+find "${SRCROOT}" \( -name "*.h" -or -name "*.m" -or -name "*.swift" \) -print0 | xargs -0 egrep --with-filename --line-number --only-matching "($TAGS).*\$|($ERRORTAG).*\$" | perl -p -e "s/($TAGS)/ warning: \$1/" | perl -p -e "s/($ERRORTAG)/ error: \$1/"
+
+
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>1ADDBA3D-2A03-4986-A4B1-954CEC55538E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>All comment syntax </string>
+	<string>Comment syntax </string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
