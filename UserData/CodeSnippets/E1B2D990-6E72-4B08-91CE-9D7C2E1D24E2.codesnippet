@@ -11,7 +11,7 @@
 	<key>IDECodeSnippetContents</key>
 	<string>import UIKit
 
-@IBDesignable class &lt;#name for custom view#&gt;: UIView ,ViewConnectable{
+@IBDesignable class &lt;#name for custom view#&gt;: UIView, ViewConnectable {
     // let viewname = &lt;#name of xib file#&gt;
     
     override init(frame: CGRect) {
