@@ -12,61 +12,23 @@
 	<string>import UIKit
 
 @IBDesignable class &lt;#name for custom view#&gt;: UIView, ViewConnectable {
-    // let viewname = &lt;#name of xib file#&gt;
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         initialize()
-        // commonInit()
-        
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         initialize()
-        // commonInit()
     }
-    
-    //    private func  commonInit(){
-    //        Bundle.main.loadNibNamed(viewname, owner: self, options: nil)
-    //        addSubview(Player_uiview)
-    //        Player_uiview.frame = self.bounds
-    //        Player_uiview.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-    //    }
     
     private func initialize() {
-        //        let view:UIView =  loadViewFromNib()
-        //        view.frame = bounds
-        //        view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        //        addSubview(view)
-        commit()
+        setupView()
     }
-    
-    //    //******   for Load Custom View
-    //    private func loadViewFromNib () -&gt; UIView{
-    //        let  bundle = Bundle(for: type(of: self))
-    //        let nib = UINib(nibName: viewname , bundle:bundle)
-    //        let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
-    //        return view
-    //    }
-    
     
 }
-
-
-protocol ViewConnectable {}
-
-extension ViewConnectable where Self: UIView {
-    func commit (){
-        let bundle = Bundle(for: type(of: self))
-        let nib = UINib(nibName: String(describing: Self.self), bundle: bundle)
-        let views = nib.instantiate(withOwner: self, options: nil)
-        guard let view = views.first as? UIView else {return}
-        Font.setFont(view: view, font: .IranSans)
-        view.frame = bounds
-        addSubview(view)
-    }
-}</string>
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>E1B2D990-6E72-4B08-91CE-9D7C2E1D24E2</string>
 	<key>IDECodeSnippetLanguage</key>
