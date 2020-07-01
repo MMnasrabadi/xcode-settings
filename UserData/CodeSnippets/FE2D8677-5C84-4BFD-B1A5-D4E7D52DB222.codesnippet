@@ -9,23 +9,22 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>     &lt;#Button#&gt;.rx.tap
-            .debounce(RxTimeInterval.milliseconds(100), scheduler: MainScheduler.instance)
-            .subscribe(onNext: { [weak self] in
-                guard let self = self else { return }
-                
-            }).disposed(by: disposeBag)</string>
+	<string> &lt;#VM#&gt;.loading
+            .observeOn(MainScheduler.instance)
+            .map {!$0}
+            .bind(to: &lt;#View#&gt;.rx.isUserInteractionEnabled)
+            .disposed(by: disposeBag)</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>A9794331-926C-4EA0-A358-F54EDE69E9DA</string>
+	<string>FE2D8677-5C84-4BFD-B1A5-D4E7D52DB222</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>tap</string>
+	<string>Disable VIew</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
