@@ -1252,24 +1252,6 @@
 			</dict>
 			<dict>
 				<key>Action</key>
-				<string>searchDocumentationForSelectedText:</string>
-				<key>Alternate</key>
-				<string>NO</string>
-				<key>CommandID</key>
-				<string>Xcode.IDEKit.CmdDefinition.SearchDocumentationForSelectedText</string>
-				<key>Group</key>
-				<string>Help Menu</string>
-				<key>GroupID</key>
-				<string>Xcode.IDEKit.MenuDefinition.Main</string>
-				<key>GroupedAlternate</key>
-				<string>NO</string>
-				<key>Navigation</key>
-				<string>NO</string>
-				<key>Title</key>
-				<string>Search Documentation for Selected Text</string>
-			</dict>
-			<dict>
-				<key>Action</key>
 				<string>showDocumentItemsMenu:</string>
 				<key>Alternate</key>
 				<string>NO</string>
@@ -2446,6 +2428,8 @@
 			</array>
 			<key>
 </key>
+			<string>insertNewline:</string>
+			<key></key>
 			<string>insertNewline:</string>
 			<key>$@X</key>
 			<string>uppercaseWord:</string>

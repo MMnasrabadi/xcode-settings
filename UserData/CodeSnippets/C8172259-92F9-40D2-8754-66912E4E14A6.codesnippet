@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>rx response</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>     &lt;#VM#&gt;.loading
+            .observeOn(MainScheduler.instance)
+            .bind(to: &lt;#View#&gt;.rx.isAnimating)
+            .disposed(by: disposeBag)
+        
+        &lt;#VM#&gt;.successResponse
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { [weak self] success in
+                guard let self = self else { return }
+                
+            }).disposed(by: disposeBag)
+        
+        &lt;#VM#&gt;.errorResponse
+            .observeOn(MainScheduler.instance)
+            .subscribe(onNext: { [weak self] error in
+                guard let self = self else { return }
+                
+            }).disposed(by: disposeBag)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C8172259-92F9-40D2-8754-66912E4E14A6</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>rx response</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>rx response</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
