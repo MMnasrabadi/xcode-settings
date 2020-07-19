@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>rx</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>   &lt;#VM#&gt;.errorResponse
+           .observeOn(MainScheduler.instance)
+           .subscribe(onNext: { [weak self] errorResponse in
+               guard let self = self else { return }
+               switch errorResponse {
+               case .serverError:
+                   print("errorResponse", "serverError")
+               case .tryAgainLater:
+                   print("errorResponse", "tryAgainLater")
+               case .logicError(let str):
+                   print("errorResponse logicError", str)
+               case .unknown:
+                   print("errorResponse", "unknown")
+               }
+           }).disposed(by: disposeBag)
+        </string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A2D188E2-5749-45F9-B513-38012CD1F0AE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Error Response</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

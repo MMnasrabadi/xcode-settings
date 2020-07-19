@@ -10,23 +10,11 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>     &lt;#VM#&gt;.loading
-            .observeOn(MainScheduler.instance)
-            .bind(to: &lt;#View#&gt;.rx.isAnimating)
-            .disposed(by: disposeBag)
-        
-        &lt;#VM#&gt;.successResponse
-            .observeOn(MainScheduler.instance)
-            .subscribe(onNext: { [weak self] success in
-                guard let self = self else { return }
-                
-            }).disposed(by: disposeBag)
-        
-        &lt;#VM#&gt;.errorResponse
-            .observeOn(MainScheduler.instance)
-            .subscribe(onNext: { [weak self] error in
-                guard let self = self else { return }
-                
-            }).disposed(by: disposeBag)</string>
+        .observeOn(MainScheduler.instance)
+        .bind(to: &lt;#View#&gt;.rx.isAnimating)
+        .disposed(by: disposeBag)
+     
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>C8172259-92F9-40D2-8754-66912E4E14A6</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -34,7 +22,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>response</string>
+	<string>Loading</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -9,19 +9,20 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> &lt;#VM#&gt;.loading
-            .observeOn(MainScheduler.instance)
-            .map {!$0}
-            .bind(to: &lt;#View#&gt;.rx.isUserInteractionEnabled)
-            .disposed(by: disposeBag)</string>
+	<string> &lt;#VM#&gt;.successResponse
+           .observeOn(MainScheduler.instance)
+           .subscribe(onNext: { [weak self] success in
+               guard let self = self else { return }
+               
+           }).disposed(by: disposeBag)</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>FE2D8677-5C84-4BFD-B1A5-D4E7D52DB222</string>
+	<string>FB806015-972C-4D9F-9111-B402AD28357A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Disable VIew</string>
+	<string>Success Response</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

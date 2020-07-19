@@ -3,25 +3,32 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>rx</string>
+	<string>traitCollectionDidChange</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> &lt;#VM#&gt;.loading
-            .observeOn(MainScheduler.instance)
-            .map {!$0}
-            .bind(to: &lt;#View#&gt;.rx.isUserInteractionEnabled)
-            .disposed(by: disposeBag)</string>
+	<string> override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        guard #available(iOS 12, *) else {
+            light()
+            return
+        }
+        if traitCollection.userInterfaceStyle == .light {
+            light()
+        }else {
+            dark()
+        }
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>FE2D8677-5C84-4BFD-B1A5-D4E7D52DB222</string>
+	<string>F46DBEE1-13C7-4F5A-912F-A079DA38E8EC</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Disable VIew</string>
+	<string>Theme TraitCollection DidChange</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
