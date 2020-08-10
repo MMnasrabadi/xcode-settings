@@ -3,25 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>rx</string>
+	<string>DispatchSemaphore</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> &lt;#VM#&gt;.loading
-            .observeOn(MainScheduler.instance)
-            .map {!$0}
-    .bind(to: &lt;#view#&gt;.rx.isUserInteractionEnabled)
-            .disposed(by: disposeBag)</string>
+	<string> let semaphore = DispatchSemaphore(value: 0)
+        semaphore.wait(timeout: .distantFuture)
+        semaphore.signal()</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>FE2D8677-5C84-4BFD-B1A5-D4E7D52DB222</string>
+	<string>5F17A13C-0090-4911-B2A0-2AB1A6F3F927</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Disable VIew</string>
+	<string>Dispatch Semaphore</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

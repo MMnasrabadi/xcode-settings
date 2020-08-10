@@ -3,25 +3,40 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>rx</string>
+	<string>enum</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> &lt;#VM#&gt;.loading
-            .observeOn(MainScheduler.instance)
-            .map {!$0}
-    .bind(to: &lt;#view#&gt;.rx.isUserInteractionEnabled)
-            .disposed(by: disposeBag)</string>
+	<string> enum &lt;#Service#&gt;Error {
+        
+        case tryAgainLater
+        case serverError
+        case logicError(_: String)
+        case unknown
+        
+        var errorValue: String {
+            switch self {
+            case .tryAgainLater:
+                return ""
+            case .serverError:
+                return ""
+            case .logicError(let str):
+                return str
+            case .unknown:
+                return ""
+            }
+        }
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>FE2D8677-5C84-4BFD-B1A5-D4E7D52DB222</string>
+	<string>3C2DB492-E4E5-4022-BE82-A8726BA9DE79</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Disable VIew</string>
+	<string>Service Error</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
