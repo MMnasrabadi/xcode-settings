@@ -74,6 +74,66 @@
 				<key>Alternate</key>
 				<string>NO</string>
 				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.rayternet.TrickerX.Codable,IDESourceEditorExtensionCommand:makeCodingKeys</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Codable</string>
+				<key>Title</key>
+				<string>Make Coding Key</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.rayternet.TrickerX.Codable,IDESourceEditorExtensionCommand:makeCodingKeysWithSorting</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Codable</string>
+				<key>Title</key>
+				<string>Make Coding Key With Sorting</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
+				<string>IDESourceEditorExtension:com.rayternet.TrickerX.Codable,IDESourceEditorExtensionCommand:readme</string>
+				<key>Group</key>
+				<string>Editor Menu for Source Code</string>
+				<key>GroupID</key>
+				<string>Xcode.IDEPegasusSourceEditor.MenuDefinition.Editor</string>
+				<key>GroupedAlternate</key>
+				<string>NO</string>
+				<key>Navigation</key>
+				<string>NO</string>
+				<key>Parent Title</key>
+				<string>Codable</string>
+				<key>Title</key>
+				<string>README</string>
+			</dict>
+			<dict>
+				<key>Action</key>
+				<string>_invokeSourceEditorExtensionCommand:</string>
+				<key>Alternate</key>
+				<string>NO</string>
+				<key>CommandID</key>
 				<string>IDESourceEditorExtension:com.stevenmagdy.CarboNow4Xcode.carbon-now-sh,IDESourceEditorExtensionCommand:com.stevenmagdy.CarboNow4Xcode.carbon-now-sh.OpenCommand</string>
 				<key>Group</key>
 				<string>Editor Menu for Source Code</string>
@@ -2376,28 +2436,12 @@
 		<dict>
 			<key></key>
 			<array>
-				<string>scrollToEndOfDocument:</string>
-				<string>centerSelectionInVisibleArea:</string>
-				<string>scrollToBeginningOfDocument:</string>
-				<string>transpose:</string>
-				<string>deleteToMark:</string>
-				<string>selectToMark:</string>
-				<string>swapWithMark:</string>
-				<string>setMark:</string>
-				<string>yank:</string>
-				<string>previousCompletion:</string>
-				<string>nextCompletion:</string>
-				<string>deleteSubWordForward:</string>
-				<string>deleteToEndOfParagraph:</string>
-				<string>deleteWordForward:</string>
-				<string>delete:</string>
-				<string>deleteWordBackward:</string>
+				<string>moveSubWordForward:</string>
 				<string>moveToBeginningOfParagraphAndModifySelection:</string>
 				<string>moveSubWordForwardAndModifySelection:</string>
 				<string>moveToEndOfTextAndModifySelection:</string>
 				<string>moveToBeginningOfDocumentAndModifySelection:</string>
 				<string>moveDownAndModifySelection:</string>
-				<string>moveSubWordForward:</string>
 				<string>moveBackwardAndModifySelection:</string>
 				<string>moveToBeginningOfParagraph:</string>
 				<string>moveToEndOfDocumentAndModifySelection:</string>
@@ -2405,18 +2449,10 @@
 				<string>moveParagraphBackwardAndModifySelection:</string>
 				<string>moveToBeginningOfTextAndModifySelection:</string>
 				<string>moveWordRightAndModifySelection:</string>
-				<array>
-					<string>moveBackward:</string>
-					<string>moveToBeginningOfParagraph:</string>
-				</array>
 				<string>moveBackward:</string>
 				<string>moveForward:</string>
-				<array>
-					<string>moveForward:</string>
-					<string>moveToEndOfParagraph:</string>
-				</array>
-				<string>moveToEndOfText:</string>
 				<string>pageUp:</string>
+				<string>moveToEndOfText:</string>
 				<string>moveForwardAndModifySelection:</string>
 				<string>pageDown:</string>
 				<string>moveToBeginningOfText:</string>
@@ -2425,6 +2461,30 @@
 				<string>moveParagraphForwardAndModifySelection:</string>
 				<string>moveToEndOfParagraph:</string>
 				<string>moveToEndOfParagraphAndModifySelection:</string>
+				<string>deleteSubWordForward:</string>
+				<array>
+					<string>moveBackward:</string>
+					<string>moveToBeginningOfParagraph:</string>
+				</array>
+				<array>
+					<string>moveForward:</string>
+					<string>moveToEndOfParagraph:</string>
+				</array>
+				<string>deleteToEndOfParagraph:</string>
+				<string>deleteWordForward:</string>
+				<string>delete:</string>
+				<string>deleteWordBackward:</string>
+				<string>deleteToMark:</string>
+				<string>selectToMark:</string>
+				<string>swapWithMark:</string>
+				<string>setMark:</string>
+				<string>yank:</string>
+				<string>centerSelectionInVisibleArea:</string>
+				<string>scrollToBeginningOfDocument:</string>
+				<string>scrollToEndOfDocument:</string>
+				<string>previousCompletion:</string>
+				<string>nextCompletion:</string>
+				<string>transpose:</string>
 			</array>
 			<key>
 </key>
