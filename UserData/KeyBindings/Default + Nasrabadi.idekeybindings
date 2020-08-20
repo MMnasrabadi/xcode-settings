@@ -722,15 +722,6 @@
 	<dict>
 		<key>Key Bindings</key>
 		<dict>
-			<key>$@D</key>
-			<array>
-				<string>selectLine:</string>
-				<string>copy:</string>
-				<string>moveToEndOfLine:</string>
-				<string>insertNewline:</string>
-				<string>paste:</string>
-				<string>deleteBackward:</string>
-			</array>
 			<key>@d</key>
 			<string>deleteLine:</string>
 			<key></key>
