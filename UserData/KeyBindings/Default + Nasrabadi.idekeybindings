@@ -722,10 +722,117 @@
 	<dict>
 		<key>Key Bindings</key>
 		<dict>
+			<key></key>
+			<array>
+				<string>moveSubWordForward:</string>
+				<string>moveToBeginningOfParagraphAndModifySelection:</string>
+				<string>moveSubWordForwardAndModifySelection:</string>
+				<string>moveToEndOfTextAndModifySelection:</string>
+				<string>moveToBeginningOfDocumentAndModifySelection:</string>
+				<string>moveDownAndModifySelection:</string>
+				<string>moveBackwardAndModifySelection:</string>
+				<string>moveToBeginningOfParagraph:</string>
+				<string>moveToEndOfDocumentAndModifySelection:</string>
+				<string>moveSubWordBackward:</string>
+				<string>moveParagraphBackwardAndModifySelection:</string>
+				<string>moveToBeginningOfTextAndModifySelection:</string>
+				<string>moveWordRightAndModifySelection:</string>
+				<string>moveBackward:</string>
+				<string>moveForward:</string>
+				<string>pageUp:</string>
+				<string>moveToEndOfText:</string>
+				<string>moveForwardAndModifySelection:</string>
+				<string>pageDown:</string>
+				<string>moveToBeginningOfText:</string>
+				<string>moveWordLeftAndModifySelection:</string>
+				<string>moveSubWordBackwardAndModifySelection:</string>
+				<string>moveParagraphForwardAndModifySelection:</string>
+				<string>moveToEndOfParagraph:</string>
+				<string>moveToEndOfParagraphAndModifySelection:</string>
+				<string>deleteSubWordForward:</string>
+				<array>
+					<string>moveBackward:</string>
+					<string>moveToBeginningOfParagraph:</string>
+				</array>
+				<array>
+					<string>moveForward:</string>
+					<string>moveToEndOfParagraph:</string>
+				</array>
+				<string>deleteToEndOfParagraph:</string>
+				<string>deleteWordForward:</string>
+				<string>delete:</string>
+				<string>deleteWordBackward:</string>
+				<string>deleteToMark:</string>
+				<string>selectToMark:</string>
+				<string>swapWithMark:</string>
+				<string>setMark:</string>
+				<string>yank:</string>
+				<string>centerSelectionInVisibleArea:</string>
+				<string>scrollToBeginningOfDocument:</string>
+				<string>scrollToEndOfDocument:</string>
+				<string>previousCompletion:</string>
+				<string>complete:</string>
+				<string>nextCompletion:</string>
+				<string>transpose:</string>
+			</array>
+			<key>
+</key>
+			<string>insertNewline:</string>
+			<key></key>
+			<string>insertNewline:</string>
+			<key>$@X</key>
+			<string>uppercaseWord:</string>
+			<key>$@</key>
+			<string>moveWordBackwardAndModifySelection:</string>
+			<key>$@</key>
+			<string>moveWordForwardAndModifySelection:</string>
+			<key>$</key>
+			<string>moveUpAndModifySelection:</string>
+			<key>$</key>
+			<string>moveToLeftEndOfLineAndModifySelection:</string>
+			<key>$</key>
+			<string>moveToRightEndOfLineAndModifySelection:</string>
 			<key>@d</key>
 			<string>deleteLine:</string>
+			<key>@</key>
+			<string>scrollPageUp:</string>
+			<key>@</key>
+			<string>scrollPageDown:</string>
+			<key>@</key>
+			<string>moveWordLeft:</string>
+			<key>@</key>
+			<string>moveWordRight:</string>
+			<key>@</key>
+			<string>moveToBeginningOfDocument:</string>
+			<key>@</key>
+			<string>moveToEndOfDocument:</string>
+			<key>@</key>
+			<string>pageUpAndModifySelection:</string>
+			<key>@</key>
+			<string>pageDownAndModifySelection:</string>
+			<key>~
+</key>
+			<string>insertNewlineIgnoringFieldEditor:</string>
+			<key>~$@X</key>
+			<string>capitalizeWord:</string>
+			<key>~$X</key>
+			<string>lowercaseWord:</string>
+			<key></key>
+			<string>deleteBackward:</string>
+			<key></key>
+			<string>moveUp:</string>
+			<key></key>
+			<string>moveDown:</string>
 			<key></key>
 			<string>deleteForward:</string>
+			<key></key>
+			<string>moveToLeftEndOfLine:</string>
+			<key></key>
+			<string>moveToRightEndOfLine:</string>
+			<key></key>
+			<string>scrollPageUp:</string>
+			<key></key>
+			<string>scrollPageDown:</string>
 		</dict>
 		<key>Version</key>
 		<integer>3</integer>
