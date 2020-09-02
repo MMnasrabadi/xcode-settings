@@ -780,6 +780,15 @@
 			<string>insertNewline:</string>
 			<key></key>
 			<string>insertNewline:</string>
+			<key>$@D</key>
+			<array>
+				<string>selectLine:</string>
+				<string>copy:</string>
+				<string>moveToEndOfLine:</string>
+				<string>insertNewline:</string>
+				<string>paste:</string>
+				<string>deleteBackward:</string>
+			</array>
 			<key>$@X</key>
 			<string>uppercaseWord:</string>
 			<key>$@</key>

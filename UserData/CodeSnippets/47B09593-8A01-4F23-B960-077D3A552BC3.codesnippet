@@ -3,25 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>doucumentPath</string>
+	<string>#if</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    let doucumentPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
-    // print("FileManager", FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first)</string>
+	<string>if canImport(UIKit)</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>965236DB-EDB4-45F6-993C-26D5A7B1BF5E</string>
+	<string>47B09593-8A01-4F23-B960-077D3A552BC3</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Doucument Path save data and file</string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Doucument Path</string>
+	<string>canImport</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
