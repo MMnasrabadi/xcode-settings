@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>sq</string>
+	<string>DispatchQueue</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeExpression</string>
@@ -11,18 +11,22 @@
 	<key>IDECodeSnippetContents</key>
 	<string>   // Several queue
         let queue = DispatchQueue(label: &lt;#name for queue#&gt;, attributes: .concurrent)
-        queue.async {
+        queue.async { [weak self] in
+            guard let self = self else { return }
             &lt;#code#&gt;
         }
-        queue.sync {
+        queue.sync { [weak self] in
+            guard let self = self else { return }
             &lt;#code#&gt;
         }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>4BA005A2-25E1-487F-AF87-B304B8C5318F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>async</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Several DispatchQueue</string>
+	<string>async</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

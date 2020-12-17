@@ -3,13 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>DispatchQueue  asyncAfter</string>
+	<string>DispatchQueue</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
+	<string>DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: { [weak self] in
+    guard let self = self else { return }
     &lt;#self.performSegue(withIdentifier: "mainSegue", sender: self)#&gt;
 })</string>
 	<key>IDECodeSnippetIdentifier</key>
@@ -17,9 +18,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>dispatchQueue  asyncAfter</string>
+	<string>asyncAfter</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>DispatchQueue run after several time</string>
+	<string>run after several time</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,13 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>DispatchQueue  Async</string>
+	<string>DispatchQueue</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>        DispatchQueue.main.async {
+	<string>        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
             &lt;#code#&gt;
         }</string>
 	<key>IDECodeSnippetIdentifier</key>
@@ -17,9 +18,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>dispatchQueue main async</string>
+	<string>main async</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>DispatchQueue Main Async</string>
+	<string>Main Async</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

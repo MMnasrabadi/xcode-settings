@@ -3,17 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>DispatchQueue default</string>
+	<string>DispatchQueue</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>DispatchQueue.global(qos: .default).async {
+	<string>DispatchQueue.global(qos: .default).async {  [weak self] in
+    guard let self = self else { return }
             &lt;#code#&gt;
         }
 &lt;#OR#&gt;
-        DispatchQueue.global().async {
+        DispatchQueue.global().async {  [weak self] in
+            guard let self = self else { return }
             // qos' default value is ´DispatchQoS.QoSClass.default`
             &lt;#code#&gt;
         }
@@ -23,9 +25,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>dispatch Queue default</string>
+	<string>Queue default</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>DispatchQueue Default</string>
+	<string>Default</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

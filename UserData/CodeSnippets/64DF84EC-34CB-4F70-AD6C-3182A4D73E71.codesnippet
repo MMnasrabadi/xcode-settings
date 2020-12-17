@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// swiftlint:enable localizable_usage2</string>
+	<string>// swiftlint:enable all</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>64DF84EC-34CB-4F70-AD6C-3182A4D73E71</string>
 	<key>IDECodeSnippetLanguage</key>
