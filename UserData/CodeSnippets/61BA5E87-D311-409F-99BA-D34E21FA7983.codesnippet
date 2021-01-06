@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>Weakifiable</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+protocol Weakifiable: class { }
+
+extension NSObject: Weakifiable {}
+
+extension Weakifiable {
+    func weakify&lt;T&gt;(_ code: @escaping (Self, T) -&gt; Void) -&gt; (T) -&gt; Void {
+        return { [weak self] data in
+            guard let self = self else { return }
+            code(self, data)
+        }
+    }
+    func weakify(_ code: @escaping (Self) -&gt; Void) -&gt; () -&gt; Void {
+        return { [weak self] in
+            guard let self = self else { return }
+            code(self)
+        }
+    }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>61BA5E87-D311-409F-99BA-D34E21FA7983</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Weakifiable</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Weakifiable</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
