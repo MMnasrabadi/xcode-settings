@@ -9,16 +9,27 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>
-protocol Weakifiable: class { }
+	<string>protocol Weakifiable: class { }
 
 extension NSObject: Weakifiable {}
 
 extension Weakifiable {
+    func weakify&lt;T, Z&gt;(_ code: @escaping (Self, T) -&gt; Z) -&gt; (T) -&gt; Z? {
+        return { [weak self] data in
+            guard let self = self else { return nil}
+            return code(self, data)
+        }
+    }
     func weakify&lt;T&gt;(_ code: @escaping (Self, T) -&gt; Void) -&gt; (T) -&gt; Void {
         return { [weak self] data in
             guard let self = self else { return }
             code(self, data)
+        }
+    }
+    func weakify&lt;Z&gt;(_ code: @escaping (Self) -&gt; Z) -&gt; () -&gt; Z? {
+        return { [weak self] in
+            guard let self = self else { return nil}
+            return code(self)
         }
     }
     func weakify(_ code: @escaping (Self) -&gt; Void) -&gt; () -&gt; Void {
@@ -27,8 +38,7 @@ extension Weakifiable {
             code(self)
         }
     }
-}
-</string>
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>61BA5E87-D311-409F-99BA-D34E21FA7983</string>
 	<key>IDECodeSnippetLanguage</key>

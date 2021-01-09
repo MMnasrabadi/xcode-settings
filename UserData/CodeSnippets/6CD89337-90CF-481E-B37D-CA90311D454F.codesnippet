@@ -15,7 +15,8 @@ protocol ViewConnectable {}
 
 extension ViewConnectable where Self: UIView {
     func setupView() {
-        let bundle = Bundle(for: type(of: self))
+        // let bundle = Bundle(for: type(of: self))
+        let bundle = Bundle(for: Self.self)
         let nib = UINib(nibName: String(describing: Self.self), bundle: bundle)
         let views = nib.instantiate(withOwner: self, options: nil)
         guard let view = views.first as? UIView else { return }
@@ -26,14 +27,14 @@ extension ViewConnectable where Self: UIView {
 extension UIView {
     public func addExpletiveSubView (view: UIView) {
         view.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(view)
+        // addSubview(view)
+        insertSubview(view, at: 0)
         view.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         view.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         view.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
         view.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
     }
-}
-</string>
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>6CD89337-90CF-481E-B37D-CA90311D454F</string>
 	<key>IDECodeSnippetLanguage</key>
