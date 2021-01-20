@@ -10,9 +10,9 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string> &lt;#VM#&gt;.loading
-            .observeOn(MainScheduler.instance)
+            .observe(on: MainScheduler.instance)
             .map {!$0}
-    .bind(to: &lt;#view#&gt;.rx.isUserInteractionEnabled)
+            .bind(to: &lt;#view#&gt;.rx.isUserInteractionEnabled)
             .disposed(by: disposeBag)</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>FE2D8677-5C84-4BFD-B1A5-D4E7D52DB222</string>

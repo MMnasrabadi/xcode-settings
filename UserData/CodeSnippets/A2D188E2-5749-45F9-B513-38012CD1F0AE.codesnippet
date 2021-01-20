@@ -10,7 +10,7 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>   &lt;#VM#&gt;.errorResponse
-           .observeOn(MainScheduler.instance)
+           .observe(on: MainScheduler.instance)
            .subscribe(onNext: { [weak self] errorResponse in
                guard let self = self else { return }
                switch errorResponse {

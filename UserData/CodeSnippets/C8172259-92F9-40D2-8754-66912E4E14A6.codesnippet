@@ -10,7 +10,7 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>     &lt;#VM#&gt;.loading
-        .observeOn(MainScheduler.instance)
+        .observe(on: MainScheduler.instance)
         .bind(to: &lt;#self#&gt;.rx.isAnimating)
         .disposed(by: disposeBag)
      
