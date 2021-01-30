@@ -879,8 +879,8 @@
 				<string>moveWordRightAndModifySelection:</string>
 				<string>moveBackward:</string>
 				<string>moveForward:</string>
-				<string>pageUp:</string>
 				<string>moveToEndOfText:</string>
+				<string>pageUp:</string>
 				<string>moveForwardAndModifySelection:</string>
 				<string>pageDown:</string>
 				<string>moveToBeginningOfText:</string>
@@ -889,7 +889,9 @@
 				<string>moveParagraphForwardAndModifySelection:</string>
 				<string>moveToEndOfParagraph:</string>
 				<string>moveToEndOfParagraphAndModifySelection:</string>
-				<string>deleteSubWordForward:</string>
+				<string>deleteToMark:</string>
+				<string>selectToMark:</string>
+				<string>swapWithMark:</string>
 				<array>
 					<string>moveBackward:</string>
 					<string>moveToBeginningOfParagraph:</string>
@@ -898,22 +900,18 @@
 					<string>moveForward:</string>
 					<string>moveToEndOfParagraph:</string>
 				</array>
+				<string>setMark:</string>
+				<string>yank:</string>
+				<string>deleteSubWordForward:</string>
 				<string>deleteToEndOfParagraph:</string>
 				<string>deleteWordForward:</string>
 				<string>delete:</string>
 				<string>deleteWordBackward:</string>
-				<string>deleteToMark:</string>
-				<string>selectToMark:</string>
-				<string>swapWithMark:</string>
-				<string>setMark:</string>
-				<string>yank:</string>
 				<string>centerSelectionInVisibleArea:</string>
 				<string>scrollToBeginningOfDocument:</string>
 				<string>scrollToEndOfDocument:</string>
 				<string>previousCompletion:</string>
 				<string>complete:</string>
-				<string>nextCompletion:</string>
-				<string>transpose:</string>
 			</array>
 			<key>
 </key>
