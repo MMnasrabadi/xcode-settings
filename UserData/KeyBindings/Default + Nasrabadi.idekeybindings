@@ -864,12 +864,29 @@
 		<dict>
 			<key></key>
 			<array>
-				<string>moveSubWordForward:</string>
+				<string>scrollToEndOfDocument:</string>
+				<string>centerSelectionInVisibleArea:</string>
+				<string>scrollToBeginningOfDocument:</string>
+				<string>transpose:</string>
+				<string>deleteToMark:</string>
+				<string>selectToMark:</string>
+				<string>swapWithMark:</string>
+				<string>setMark:</string>
+				<string>yank:</string>
+				<string>previousCompletion:</string>
+				<string>complete:</string>
+				<string>nextCompletion:</string>
+				<string>deleteSubWordForward:</string>
+				<string>deleteToEndOfParagraph:</string>
+				<string>deleteWordForward:</string>
+				<string>delete:</string>
+				<string>deleteWordBackward:</string>
 				<string>moveToBeginningOfParagraphAndModifySelection:</string>
 				<string>moveSubWordForwardAndModifySelection:</string>
 				<string>moveToEndOfTextAndModifySelection:</string>
 				<string>moveToBeginningOfDocumentAndModifySelection:</string>
 				<string>moveDownAndModifySelection:</string>
+				<string>moveSubWordForward:</string>
 				<string>moveBackwardAndModifySelection:</string>
 				<string>moveToBeginningOfParagraph:</string>
 				<string>moveToEndOfDocumentAndModifySelection:</string>
@@ -877,8 +894,16 @@
 				<string>moveParagraphBackwardAndModifySelection:</string>
 				<string>moveToBeginningOfTextAndModifySelection:</string>
 				<string>moveWordRightAndModifySelection:</string>
+				<array>
+					<string>moveBackward:</string>
+					<string>moveToBeginningOfParagraph:</string>
+				</array>
 				<string>moveBackward:</string>
 				<string>moveForward:</string>
+				<array>
+					<string>moveForward:</string>
+					<string>moveToEndOfParagraph:</string>
+				</array>
 				<string>moveToEndOfText:</string>
 				<string>pageUp:</string>
 				<string>moveForwardAndModifySelection:</string>
@@ -889,44 +914,12 @@
 				<string>moveParagraphForwardAndModifySelection:</string>
 				<string>moveToEndOfParagraph:</string>
 				<string>moveToEndOfParagraphAndModifySelection:</string>
-				<string>deleteToMark:</string>
-				<string>selectToMark:</string>
-				<string>swapWithMark:</string>
-				<array>
-					<string>moveBackward:</string>
-					<string>moveToBeginningOfParagraph:</string>
-				</array>
-				<array>
-					<string>moveForward:</string>
-					<string>moveToEndOfParagraph:</string>
-				</array>
-				<string>setMark:</string>
-				<string>yank:</string>
-				<string>deleteSubWordForward:</string>
-				<string>deleteToEndOfParagraph:</string>
-				<string>deleteWordForward:</string>
-				<string>delete:</string>
-				<string>deleteWordBackward:</string>
-				<string>centerSelectionInVisibleArea:</string>
-				<string>scrollToBeginningOfDocument:</string>
-				<string>scrollToEndOfDocument:</string>
-				<string>previousCompletion:</string>
-				<string>complete:</string>
 			</array>
 			<key>
 </key>
 			<string>insertNewline:</string>
 			<key></key>
 			<string>insertNewline:</string>
-			<key>$@D</key>
-			<array>
-				<string>selectLine:</string>
-				<string>copy:</string>
-				<string>moveToEndOfLine:</string>
-				<string>insertNewline:</string>
-				<string>paste:</string>
-				<string>deleteBackward:</string>
-			</array>
 			<key>$@X</key>
 			<string>uppercaseWord:</string>
 			<key>$@</key>
