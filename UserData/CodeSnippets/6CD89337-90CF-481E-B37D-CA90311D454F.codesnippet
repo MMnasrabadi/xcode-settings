@@ -14,7 +14,7 @@
 protocol ViewConnectable {}
 
 extension ViewConnectable where Self: UIView {
-    func setupView() {
+    func connectView() {
         // let bundle = Bundle(for: type(of: self))
         let bundle = Bundle(for: Self.self)
         let nib = UINib(nibName: String(describing: Self.self), bundle: bundle)

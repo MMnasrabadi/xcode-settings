@@ -3,40 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>cv</string>
+	<string>builder</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>import UIKit
+	<string>#if TARGET_INTERFACE_BUILDER
+// this code will execute only in IB
 
-@IBDesignable class &lt;#name for custom view#&gt;: UIView, ViewConnectable {
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        initialize()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        initialize()
-    }
-    
-    private func initialize() {
-        connectView()
-    }
-    
-}
-</string>
+#else
+// this my code will run in the app itself
+
+#endif</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>E1B2D990-6E72-4B08-91CE-9D7C2E1D24E2</string>
+	<string>2981BAB9-EB32-4EA6-82AB-B0B32421FFC6</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>this is a custom view</string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Custom View </string>
+	<string>TARGET_INTERFACE_BUILDER</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

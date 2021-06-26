@@ -3,40 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>cv</string>
+	<string>deinit</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>import UIKit
-
-@IBDesignable class &lt;#name for custom view#&gt;: UIView, ViewConnectable {
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        initialize()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        initialize()
-    }
-    
-    private func initialize() {
-        connectView()
-    }
-    
-}
-</string>
+	<string>deinit {
+        print("REMOVED \(self) FROM MEMORY")
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>E1B2D990-6E72-4B08-91CE-9D7C2E1D24E2</string>
+	<string>0641514E-36C6-4451-9E35-648CA5D22002</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>this is a custom view</string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Custom View </string>
+	<string>REMOVED</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
