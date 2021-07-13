@@ -9,22 +9,33 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// FIXME: &lt;#job#&gt;
+	<string>// MARK: - &lt;#tilte#&gt; -
 
-// TODO: &lt;#task#&gt;
+// TODO: - &lt;#task#&gt;
+ 
+// FIXME: - &lt;#job#&gt;
+ 
+// WARNNING: &lt;#warning#&gt;
+ 
+// CHECK: &lt;#check#&gt;
 
-// MARK: &lt;#- tilte#&gt;
+// ERROR: &lt;#error#&gt;
+ 
+// ❌: &lt;#error#&gt;
+ 
+// ???: &lt;#error#&gt;
 
-// WARNNING: &lt;#WARNNING#&gt;
+// ⚠️: &lt;#warning#&gt;
+ 
+// !!!: &lt;#warning#&gt;
+ 
+// NOTE: &lt;#note#&gt;
 
-// CHECK: &lt;#CHECK#&gt;
 
-// ERROR: &lt;#ERROR#&gt;
-
-TAGS="WARNING:|CHECK:"
-ERRORTAG="ERROR:"
+// Add this to a new run script in a target:Build Phases tab
+TAGS="TODO:|FIXME:|WARNNING:|CHECK:|NOTE:|⚠️:|\!\!\!:"
+ERRORTAG="ERROR:|❌:|\?\?\?:"
 find "${SRCROOT}" \( -name "*.h" -or -name "*.m" -or -name "*.swift" \) -print0 | xargs -0 egrep --with-filename --line-number --only-matching "($TAGS).*\$|($ERRORTAG).*\$" | perl -p -e "s/($TAGS)/ warning: \$1/" | perl -p -e "s/($ERRORTAG)/ error: \$1/"
-
 
 </string>
 	<key>IDECodeSnippetIdentifier</key>
