@@ -3,21 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>builder</string>
+	<string>interface builder</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#if TARGET_INTERFACE_BUILDER
-// this code will execute only in IB
-
-#else
-// this my code will run in the app itself
-
-#endif</string>
+	<string>    #if !TARGET_INTERFACE_BUILDER
+        setupView()
+        setupBindings()
+        #endif</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>2981BAB9-EB32-4EA6-82AB-B0B32421FFC6</string>
+	<string>62CC27A0-CA89-4E08-8336-7EFDD3109EF4</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
@@ -27,6 +24,6 @@
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

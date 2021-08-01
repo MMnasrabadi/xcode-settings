@@ -378,6 +378,12 @@
 	<dict>
 		<key>Key Bindings</key>
 		<dict>
+			<key>$@X</key>
+			<string>capitalizeWord:</string>
+			<key>^$@X</key>
+			<string>uppercaseWord:</string>
+			<key>^$@Z</key>
+			<string>lowercaseWord:</string>
 			<key>~$D</key>
 			<array>
 				<string>selectLine:</string>
