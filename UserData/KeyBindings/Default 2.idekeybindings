@@ -384,15 +384,6 @@
 			<string>uppercaseWord:</string>
 			<key>^$@Z</key>
 			<string>lowercaseWord:</string>
-			<key>~$D</key>
-			<array>
-				<string>selectLine:</string>
-				<string>copy:</string>
-				<string>moveToEndOfLine:</string>
-				<string>insertNewline:</string>
-				<string>paste:</string>
-				<string>deleteBackward:</string>
-			</array>
 			<key>~d</key>
 			<string>deleteLine:</string>
 		</dict>
