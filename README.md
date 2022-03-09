@@ -14,11 +14,17 @@ UserData
 
 
 
+
 IDETextKeyBindingSet
 ---
     IDETextKeyBindingSet.plist  makes available custom key bindings.
+    
     Place at /Applications/Xcode.app/Contents/Frameworks/IDEKit.framework/Versions/A/Resources/IDETextKeyBindingSet.plist.
+	-- OR --
+	$ sudo sh IDETextKeyBindingSet.sh 
 
+
+ 
  
 Help-full
 ---
