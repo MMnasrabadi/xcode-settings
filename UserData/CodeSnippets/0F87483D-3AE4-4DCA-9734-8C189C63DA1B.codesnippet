@@ -3,21 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string></string>
+	<string>WalletableProtocol</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>filter</string>
+	<string>extension &lt;#UserInfo#&gt;: WalletableProtocol {
+    var walletMoney: Money {
+        let money = CalculateMoney.standard
+        money.calculate(wallet)
+        return money
+    }
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>85483A47-4543-4B3F-9018-E92A55950747</string>
+	<string>0F87483D-3AE4-4DCA-9734-8C189C63DA1B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>My Code Snippet</string>
+	<string>CalculateMoney Wallet</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
